@@ -1,6 +1,6 @@
 <?php get_header() ?>
 <div class='wrapper' style="background-image: url('<?php echo get_template_directory_uri() ?>/assets/img/bg.png');">
-  <div class='login'>
+  <div class='login' id='login-wrapper'>
     <header>
       <figure class='logo-login mobile'>
         <img
@@ -28,7 +28,7 @@
           alt="Juntos para Somar"
         />
       </figure>
-      <form>
+      <form onsubmit="login()">
         <div class='form-group'>
           <label for='email'>E-mail</label>
           <input type='email' class='form-control' id='email' placeholder='email@exemplo.com' />
@@ -41,7 +41,7 @@
       </form>
     </main>
   </div>
-  <div class='video hidden'>
+  <div class='video hidden' id='video-wrapper'>
     <header>
       <figure class='logo-video'>
         <img
