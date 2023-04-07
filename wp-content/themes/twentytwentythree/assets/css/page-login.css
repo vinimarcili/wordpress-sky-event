@@ -12,6 +12,8 @@
   background: var(--gradient);
   padding: 0 15px;
   border-radius: 0;
+  font-size: 20px;
+  font-weight: 900;
 }
 .button-orange:hover {
   cursor: pointer;
@@ -25,6 +27,10 @@
 
 figure {
   margin: 0;
+}
+
+main {
+  width: 100%;
 }
 
 .hidden {
@@ -43,7 +49,7 @@ figure {
 
 .login, .video {
   width: 100%;
-  padding: 30px;
+  padding: 0 30px 30px;
   display: flex;
   flex-direction: column;
   /* justify-content: center; */
@@ -67,6 +73,9 @@ figure {
 .login header .logo-login {
   margin-left: auto;
   max-width: 300px;
+}
+.header {
+  width: 65%;
 }
 @media (max-width: 991px) {
   .login header .logo-login.desktop {
