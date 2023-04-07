@@ -3,7 +3,7 @@
   font-size: 16px;
 }
 
-.button {
+.button-orange {
   height: 35px;
   display: block;
   border: 1px solid transparent;
@@ -11,8 +11,9 @@
   background: var(--orange);
   background: var(--gradient);
   padding: 0 15px;
+  border-radius: 0;
 }
-.button:hover {
+.button-orange:hover {
   cursor: pointer;
   border-color: var(--orange) !important;
 }
@@ -48,14 +49,15 @@ figure {
   /* justify-content: center; */
   align-items: center;
   min-height: 100vh;
+  overflow: hidden;
 }
 
 .login header {
   width: 100%;
   display: flex;
-  justify-content: center;
+  justify-content: flex-end;
   align-items: center;
-  margin: 30px 0;
+  margin: 0 0 30px;
 }
 @media (max-width: 991px) {
   .login header {
@@ -99,7 +101,7 @@ figure {
   text-align: center;
 }
 .login form .form-group {
-  margin: 0 auto 30px;
+  margin: 0 auto 15px;
   max-width: 300px;
 }
 .login form label {
@@ -116,13 +118,13 @@ figure {
   background: var(--orange);
   background: var(--gradient);
   padding: 0 10px;
-  border-radius: 5px;
+  border-radius: 0;
 }
 .login form input:focus {
   outline: var(--orange);
 }
 .login form input::placeholder {
-  color: var(--orange);
+  color: white;
   opacity: 1;
 }
 .login form button {
@@ -148,7 +150,7 @@ figure {
 .video main {
   width: 100%;
   display: grid;
-  grid-template-columns: 1fr 350px;
+  grid-template-columns: 1fr 375px;
   gap: 30px;
 }
 @media (max-width: 991px) {
