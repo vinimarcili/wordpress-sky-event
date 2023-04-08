@@ -57,9 +57,9 @@
           alt="Logo"
         />
       </figure>
-      <button type='button' class='button-orange' onclick="logout()">
+      <!-- <button type='button' class='button-orange' onclick="logout()">
         Sair
-      </button>
+      </button> -->
     </header>
     <main>
       <div class='container'>
