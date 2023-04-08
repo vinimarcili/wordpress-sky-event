@@ -31,8 +31,7 @@
     <main class='text-center'>
       <figure>
         <img
-          class='img-fluid'
-          style="width: calc(50% - 7%); margin-right: 15%;"
+          class='img-fluid main-img'
           src="<?php echo get_template_directory_uri() ?>/assets/img/initial.png"
           alt="Juntos para Somar"
         />

@@ -78,6 +78,24 @@ main {
   width: 65%;
 }
 @media (max-width: 991px) {
+  .header {
+    width: 100%;
+  }
+}
+.main-img {
+  width: calc(50% - 7%);
+  margin-right: 15%;
+}
+@media (max-width: 991px) {
+  .main-img {
+    width: 100%;
+    margin-top: 30px;
+    max-width: 275px !important;
+    margin-left: -25px;
+    margin-right: 0;
+  }
+}
+@media (max-width: 991px) {
   .login header .logo-login.desktop {
     display: none;
   }
@@ -112,6 +130,16 @@ main {
 .login form .form-group {
   margin: 0 auto 15px;
   max-width: 300px;
+}
+@media (max-width: 991px) {
+  .login form {
+    margin-top: 30px;
+  }
+}
+@media (max-width: 991px) {
+  .login form .form-group {
+    max-width: 250px;
+  }
 }
 .login form label {
   color: white;
