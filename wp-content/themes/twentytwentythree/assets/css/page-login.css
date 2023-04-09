@@ -177,12 +177,19 @@ main {
 }
 @media (max-width: 991px) {
   .video header {
+    margin: 15px 0;
     flex-direction: column;
   }
 }
 .video header .logo-video {
   margin-right: auto;
   max-width: 300px;
+}
+@media (max-width: 991px) {
+  .video header .logo-video {
+    margin-left: auto;
+    max-width: 150;
+  }
 }
 .video main {
   width: 100%;
