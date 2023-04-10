@@ -64,15 +64,34 @@ main {
   justify-content: flex-end;
   align-items: center;
   margin: 0;
+  display: grid;
+  grid-template-columns: 300px 1fr 300px;
+  gap: 15px;
+  justify-content: center;
+  padding: 30px 0;
 }
 @media (max-width: 991px) {
   .login header {
     flex-direction: column;
+    grid-template-columns: 1fr;
   }
 }
 .login header .logo-login {
   margin-left: auto;
   max-width: 300px;
+}
+.login header .welcome {
+  margin: 0 auto;
+}
+@media (max-width: 991px) {
+  .login header .logo-login {
+    margin: 0 auto;
+    max-width: 250px;
+  }
+  .login header .welcome {
+    margin-top: 15px;
+    max-width: 200px;
+  }
 }
 .header {
   width: 65%;
@@ -170,20 +189,22 @@ main {
 
 .video header {
   width: 100%;
-  display: flex;
   justify-content: center;
   align-items: center;
-  margin: 30px 0;
+  margin: 30px 0 0;
+  display: grid;
+  grid-template-columns: 240px 1fr 375px;
 }
 @media (max-width: 991px) {
   .video header {
     margin: 15px 0;
     flex-direction: column;
+    display: flex;
   }
 }
 .video header .logo-video {
   margin-right: auto;
-  max-width: 300px;
+  max-width: 200px;
 }
 @media (max-width: 991px) {
   .video header .logo-video {
@@ -191,6 +212,18 @@ main {
     max-width: 150;
   }
 }
+.video header .main-img-video {
+  max-height: 140px;
+  max-width: initial !important;
+  /* margin-right: 30px; */
+  margin-bottom: -15px;
+}
+/* @media (max-width: 991px) {
+  .video header .main-img-video {
+     margin-left: auto;
+    max-width: 150; 
+  }
+} */
 .video main {
   width: 100%;
   display: grid;
@@ -220,5 +253,25 @@ main {
 @media (min-width: 1921px) {
   .video main .video-iframe, .video main .chat-iframe {
     max-height: 80vh;
+  }
+}
+
+.text {
+  font-size: 20px;
+  text-align: center;
+  color: white;
+  margin: 0;
+  line-height: 1.5;
+}
+.text-mobile {
+  display: none;
+}
+
+@media (max-width: 991px) {
+  .text {
+    display: none;
+  }
+  .text-mobile {
+    display: block;
   }
 }
